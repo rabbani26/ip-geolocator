@@ -8,9 +8,9 @@
     <description>Java class library for obtaining geolocation information of an IP address.</description>
     <developers>
         <developer>
-            <id>jeszy</id>
-            <name>Péter Jeszenszky</name>
-            <email>jeszenszky.peter@inf.unideb.hu</email>
+            <id>rabbani26</id>
+            <name>Omar Ijaz Rabbani</name>
+            <email>omarijaz.26@hotmail.com</email>
             <organization>Faculty of Informatics, University of Debrecen</organization>
             <organizationUrl>http://www.inf.unideb.hu/</organizationUrl>
         </developer>
@@ -108,8 +108,28 @@
                 <configuration>
                     <links>
                         <link>https://javadoc.io/doc/io.github.openfeign/feign-core/${feign.version}/</link>
-                    </links>
+                    </links>g
                 </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactid>maven-dependency-plugin</artifactid>
+                <version>3.2.0</version>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactid>maven-pmd-plugin</artifactid>
+                <version>3.16.0</version>
+            </plugin>
+            <plugin>
+                <groupId>com.github.spotbugs</groupId>
+                <artifactid>spotbugs-maven-plugin</artifactid>
+                <version>4.5.3.0</version>
+            </plugin>
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactid>versions-maven-plugin</artifactid>
+                <version>2.9.0</version>
             </plugin>
         </plugins>
     </reporting>
